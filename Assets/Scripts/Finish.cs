@@ -1,0 +1,38 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class Finish : MonoBehaviour
+{
+    private AudioSource finishSound;
+    private AudioSource bgm;
+    private Rigidbody2D rb;
+    private Animator anim;
+
+    // Start is called before the first frame update
+    private void Start()
+    {
+        finishSound = GetComponent<AudioSource>();
+        bgm = GameObject.Find("BG Music").GetComponent<AudioSource>();
+        rb = GameObject.Find("Player").GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Player")
+        {
+            anim.SetBool("reached", true);
+            bgm.Stop();
+            finishSound.Play();
+            rb.bodyType = RigidbodyType2D.Static;
+            Invoke("CompleteLevel", 2f);
+        }
+    }
+
+    private void CompleteLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+}
