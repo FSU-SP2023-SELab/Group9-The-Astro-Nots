@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\DailyReward.cs" />
     <Compile Include="Assets\Scripts\EndMenu.cs" />
     <Compile Include="Assets\Scripts\Finish.cs" />
     <Compile Include="Assets\Scripts\ItemCollector.cs" />
