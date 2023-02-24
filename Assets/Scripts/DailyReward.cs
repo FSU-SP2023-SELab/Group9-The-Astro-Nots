@@ -36,21 +36,32 @@ public class DailyReward : MonoBehaviour
             if (loginStreak > 0 && loginStreak % 5 == 0 && reward < 500)      
             {
                 reward = 100 * (loginStreak / 5);
+
+                Debug.Log("Reward increased to " + reward);
             }
         }
 
         TimeSpan timeSinceLastLogin = DateTime.Now - lastLogin;
+
+        Debug.Log("Player's Last Login: " + lastLogin + "\n");
+        Debug.Log("Time Since Last Login: " + timeSinceLastLogin + "\n");
 
         if (timeSinceLastLogin.TotalHours >= 24)                                 //If time since last login >24 && <48 hours give player reward, otherwise reset streak
         {
             if (timeSinceLastLogin.TotalHours < 48) {  
                 loginStreak += 1;
                 playerState.coins += reward;
+
+                Debug.Log("Login Streak: " + loginStreak + " Days\n");
             } else {
+                Debug.Log("Last login time >48 hours ago, login streak reset to 0");
                 loginStreak = 0;
             }
-   
+            
             PlayerPrefs.SetString(lastLoginKey, DateTime.Now.ToString());        //Save lastLogin as a string under the player's lastLoginKey
+            
+            Debug.Log("New last login time saved to play prefs: " + DateTime.Now.ToString() + "\n");
+
             PlayerPrefs.Save();
         }
     }
