@@ -8,26 +8,27 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     private SpriteRenderer sprite;
     private BoxCollider2D coll;
-	
-	private bool isWallslide;
-	private float wallslidespeed = 2f;
+    private float horizontal;
+
+    private bool isWallslide;
+    private float wallslidespeed = 2f;
 
 
 
-    [SerializeField]private float moveSpeed = 7f;
-    [SerializeField]private float jumpForce = 14f;
+    [SerializeField] private float moveSpeed = 7f;
+    [SerializeField] private float jumpForce = 14f;
     [SerializeField] private LayerMask jumpableGround;
-	[SerializeField] private Transform wallcheck;
-	[SerializeField] private LayerMask wallLayer;
-	
-	
+    [SerializeField] private Transform wallcheck;
+    [SerializeField] private LayerMask wallLayer;
+
+
 
     private float dirX = 0f;
 
     private enum MovementState { idle, running, jumping, falling }
 
     [SerializeField] private AudioSource jumpSoundEffect;
-    
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -48,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
             jumpSoundEffect.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
-		WallSlide();
+        WallSlide();
 
         UpdateAnimationState();
     }
@@ -90,22 +91,22 @@ public class PlayerMovement : MonoBehaviour
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
     }
-	
-	private bool IsWalled()
-	{
-			return Physics2D.OverlapCircle(wallCheck.position, 0.2f, wallLayer); 
-	}
-	
-	private void WallSlide()
-	{
-		if(IsWalled() && !IsGrounded() && horizontal != 0f)
-		{
-			isWallslide = true;	
-			rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallslidespeed, float.MaxValue));
-		}
-		else 
-		{
-			isWallSliding = false;
-		}
-	}
+
+    private bool IsWalled()
+    {
+        return Physics2D.OverlapCircle(wallcheck.position, 0.2f, wallLayer);
+    }
+
+    private void WallSlide()
+    {
+        if (IsWalled() && !IsGrounded() && horizontal != 0f)
+        {
+            isWallslide = true;
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallslidespeed, float.MaxValue));
+        }
+        else
+        {
+            isWallslide = false;
+        }
+    }
 }
