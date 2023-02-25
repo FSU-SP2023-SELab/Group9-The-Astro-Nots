@@ -59,6 +59,7 @@ public class DailyReward : MonoBehaviour
             }
             
             PlayerPrefs.SetString(lastLoginKey, DateTime.Now.ToString());        //Save lastLogin as a string under the player's lastLoginKey
+            PlayerPrefs.SetInt(loginStreakKey, loginStreak);                      //Save current long streak under player's loginStreakKey
             
             Debug.Log("New last login time saved to play prefs: " + DateTime.Now.ToString() + "\n");
 
