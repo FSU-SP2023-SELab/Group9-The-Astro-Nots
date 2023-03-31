@@ -1,7 +1,139 @@
 fileFormatVersion: 2
 guid: 56a6875890441fc40a641f0773cfb213
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4423534432627457976
+    second: BeigeIdle_0
+  - first:
+      213: 1085315592373713504
+    second: BeigeIdle_1
+  - first:
+      213: -3808781261854376378
+    second: BeigeIdle_2
+  - first:
+      213: 1502277179322583947
+    second: BeigeIdle_3
+  - first:
+      213: -4017124945968128216
+    second: BeigeIdle_4
+  - first:
+      213: 5352165340343281772
+    second: BeigeIdle_5
+  - first:
+      213: 958164843430507482
+    second: BeigeIdle_6
+  - first:
+      213: -4883005738243839760
+    second: BeigeIdle_7
+  - first:
+      213: -2603211411126030634
+    second: BeigeIdle_8
+  - first:
+      213: -3539836358281055952
+    second: BeigeIdle_9
+  - first:
+      213: -7001003879308135187
+    second: BeigeIdle_10
+  - first:
+      213: 3562536688915092593
+    second: BeigeIdle_11
+  - first:
+      213: 2971305906070430102
+    second: BeigeIdle_12
+  - first:
+      213: -5939679388243445870
+    second: BeigeIdle_13
+  - first:
+      213: -8978600875185126470
+    second: BeigeIdle_14
+  - first:
+      213: -6094478090805000975
+    second: BeigeIdle_15
+  - first:
+      213: 5699471398646959633
+    second: BeigeIdle_16
+  - first:
+      213: -7134010430896891894
+    second: BeigeIdle_17
+  - first:
+      213: 83930411136103583
+    second: BeigeIdle_18
+  - first:
+      213: -6440493170996758503
+    second: BeigeIdle_19
+  - first:
+      213: 6330549476499314641
+    second: BeigeIdle_20
+  - first:
+      213: -6781163117389355689
+    second: BeigeIdle_21
+  - first:
+      213: 5719190232581114935
+    second: BeigeIdle_22
+  - first:
+      213: 3963284464532682057
+    second: BeigeIdle_23
+  - first:
+      213: 9116778052963330228
+    second: BeigeIdle_24
+  - first:
+      213: 7238498550223084565
+    second: BeigeIdle_25
+  - first:
+      213: -2830735509531320601
+    second: BeigeIdle_26
+  - first:
+      213: -6106099911521506842
+    second: BeigeIdle_27
+  - first:
+      213: 7700072185316227818
+    second: BeigeIdle_28
+  - first:
+      213: 8371623948263189758
+    second: BeigeIdle_29
+  - first:
+      213: 8659653412611263117
+    second: BeigeIdle_30
+  - first:
+      213: 1600845104269956437
+    second: BeigeIdle_31
+  - first:
+      213: -818244032159685710
+    second: BeigeIdle_32
+  - first:
+      213: -1963848365576888162
+    second: BeigeIdle_33
+  - first:
+      213: -569542996145390037
+    second: BeigeIdle_34
+  - first:
+      213: 5955872000286777969
+    second: BeigeIdle_35
+  - first:
+      213: 5978394119570869611
+    second: BeigeIdle_36
+  - first:
+      213: -4413270060971498199
+    second: BeigeIdle_37
+  - first:
+      213: -3085882096313969505
+    second: BeigeIdle_38
+  - first:
+      213: 7851342690941184511
+    second: BeigeIdle_39
+  - first:
+      213: 2033736419968976563
+    second: BeigeIdle_40
+  - first:
+      213: -5840389353981276917
+    second: BeigeIdle_41
+  - first:
+      213: -8152638896799584309
+    second: BeigeIdle_42
+  - first:
+      213: -5400894878946227487
+    second: BeigeIdle_43
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +163,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +172,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,7 +196,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +217,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: BeigeIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bff77c212d836d30800000000000000
+      internalID: 4423534432627457976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeigeIdle_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ab0a0f7c0df0f00800000000000000
+      internalID: 1085315592373713504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeigeIdle_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e71044f9d742bc0800000000000000
+      internalID: -3808781261854376378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeigeIdle_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bc2bb922929d410800000000000000
+      internalID: 1502277179322583947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeigeIdle_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f9531352e4048c0800000000000000
+      internalID: -4017124945968128216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeigeIdle_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68a1522506b64a40800000000000000
+      internalID: 5352165340343281772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeigeIdle_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad371f839d51c4d00800000000000000
+      internalID: 958164843430507482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeigeIdle_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f828cff6241c3cb0800000000000000
+      internalID: -4883005738243839760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeigeIdle_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dee69493098fdbd0800000000000000
+      internalID: -2603211411126030634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeigeIdle_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03135a54699ffdec0800000000000000
+      internalID: -3539836358281055952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeigeIdle_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4f4be801077de90800000000000000
+      internalID: -7001003879308135187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
