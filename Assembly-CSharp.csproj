@@ -64,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\CharacterSelect\CharacterDatabase.cs" />
+    <Compile Include="Assets\Scripts\CharacterSelect\CharacterSelector.cs" />
+    <Compile Include="Assets\Scripts\CharacterSelect\CharacterSpawner.cs" />
     <Compile Include="Assets\Scripts\CustomizeScript.cs" />
     <Compile Include="Assets\Scripts\DailyReward.cs" />
     <Compile Include="Assets\Scripts\EndMenu.cs" />
