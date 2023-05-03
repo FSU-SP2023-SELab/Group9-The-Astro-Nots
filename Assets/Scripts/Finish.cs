@@ -13,13 +13,13 @@ public class Finish : MonoBehaviour
     {
         finishSound = GetComponent<AudioSource>();
         bgm = GameObject.Find("BG Music").GetComponent<AudioSource>();
-        rb = GameObject.Find("Player").GetComponent<Rigidbody2D>();
+        rb = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             anim.SetBool("reached", true);
             bgm.Stop();
