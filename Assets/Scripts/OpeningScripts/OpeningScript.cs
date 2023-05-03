@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class OpeningScript : MonoBehaviour
 {
-    public Canvas openingCanvas, levelCanvas, shopCanvas;
+    public Canvas openingCanvas, levelCanvas, shopCanvas, customizeCanvas;
 
     public void openLevel()
     {
@@ -24,6 +24,16 @@ public class OpeningScript : MonoBehaviour
     public void returnShop()
     {
         shopCanvas.enabled = false;
+        openingCanvas.enabled = true;
+    }
+    public void openCustom()
+    {
+        openingCanvas.enabled = false;
+        customizeCanvas.enabled = true;
+    }
+    public void returnCustom()
+    {
+        customizeCanvas.enabled = false;
         openingCanvas.enabled = true;
     }
 
