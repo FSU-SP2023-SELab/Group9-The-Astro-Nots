@@ -3529,6 +3529,7 @@ MonoBehaviour:
   openingCanvas: {fileID: 881848267}
   levelCanvas: {fileID: 513699890}
   shopCanvas: {fileID: 2062100507}
+  customizeCanvas: {fileID: 0}
 --- !u!4 &911302961
 Transform:
   m_ObjectHideFlags: 0
@@ -4809,7 +4810,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31b5483ee0ec4425dad054d95625c07c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinText: {fileID: 1231108167}
 --- !u!1 &1260550872
 GameObject:
   m_ObjectHideFlags: 0
