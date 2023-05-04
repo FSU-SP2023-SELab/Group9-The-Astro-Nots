@@ -46,6 +46,21 @@ public class OpeningScript : MonoBehaviour
         SceneManager.LoadScene("Level 2");
     }
 
+    public void playLevelThree()
+    {
+        SceneManager.LoadScene("Level Al");
+    }
+
+    public void playLevelFour()
+    {
+        SceneManager.LoadScene("Level CH");
+    }
+
+    public void playLevelFive()
+    {
+        SceneManager.LoadScene("Level J");
+    }
+
     public void Quit()
     {
         Application.Quit();
